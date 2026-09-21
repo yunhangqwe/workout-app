@@ -1,0 +1,85 @@
+import type { WorkoutPlan } from '../types'
+
+export const defaultPlans: WorkoutPlan[] = [
+  {
+    id: 'strength-beginner',
+    name: '全身力量入门',
+    type: 'strength',
+    description: '无需器械，激活全身肌群',
+    duration: 20,
+    color: '#ff2d55',
+    exercises: [
+      { id: 'e1', name: '深蹲', sets: 3, reps: '12 次', rest: 45 },
+      { id: 'e2', name: '俯卧撑', sets: 3, reps: '10 次', rest: 45 },
+      { id: 'e3', name: '臀桥', sets: 3, reps: '15 次', rest: 30 },
+      { id: 'e4', name: '平板支撑', sets: 3, duration: 30, rest: 30 },
+    ],
+  },
+  {
+    id: 'strength-core',
+    name: '核心强化',
+    type: 'strength',
+    description: '雕刻腰腹线条，提升稳定性',
+    duration: 15,
+    color: '#ff2d55',
+    exercises: [
+      { id: 'e5', name: '卷腹', sets: 3, reps: '20 次', rest: 30 },
+      { id: 'e6', name: '俄罗斯转体', sets: 3, reps: '30 次', rest: 30 },
+      { id: 'e7', name: '登山跑', sets: 3, duration: 40, rest: 30 },
+      { id: 'e8', name: '死虫式', sets: 3, reps: '12 次', rest: 30 },
+    ],
+  },
+  {
+    id: 'cardio-run',
+    name: '慢跑燃脂',
+    type: 'cardio',
+    description: '匀速慢跑，提升心肺耐力',
+    duration: 30,
+    color: '#ff9500',
+    exercises: [
+      { id: 'e9', name: '热身慢跑', duration: 300 },
+      { id: 'e10', name: '匀速跑', duration: 1500 },
+      { id: 'e11', name: '放松走', duration: 300 },
+    ],
+  },
+  {
+    id: 'cardio-jump',
+    name: '跳绳间歇',
+    type: 'cardio',
+    description: '高强度间歇，快速燃脂',
+    duration: 18,
+    color: '#ff9500',
+    exercises: [
+      { id: 'e12', name: '跳绳', sets: 8, duration: 60, rest: 30 },
+      { id: 'e13', name: '开合跳', sets: 3, duration: 45, rest: 20 },
+    ],
+  },
+  {
+    id: 'flexibility-morning',
+    name: '晨间唤醒拉伸',
+    type: 'flexibility',
+    description: '温和拉伸，唤醒身体',
+    duration: 12,
+    color: '#5856d6',
+    exercises: [
+      { id: 'e14', name: '颈部拉伸', duration: 60 },
+      { id: 'e15', name: '肩部环绕', duration: 60 },
+      { id: 'e16', name: '猫牛式', duration: 90 },
+      { id: 'e17', name: '婴儿式', duration: 90 },
+    ],
+  },
+  {
+    id: 'flexibility-yoga',
+    name: '睡前瑜伽',
+    type: 'flexibility',
+    description: '放松身心，改善睡眠',
+    duration: 20,
+    color: '#5856d6',
+    exercises: [
+      { id: 'e18', name: '下犬式', duration: 60 },
+      { id: 'e19', name: '鸽子式', duration: 90 },
+      { id: 'e20', name: '仰卧扭转', duration: 90 },
+      { id: 'e21', name: '摊尸式', duration: 120 },
+    ],
+  },
+]
